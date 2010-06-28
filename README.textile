@@ -1,0 +1,3 @@
+p>. !http://funciton.com/logo.png(funciton communications)! 
+
+h1{color:#666}. funciton communication - as3 library ^(alpha)^
