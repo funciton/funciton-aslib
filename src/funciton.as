@@ -1,0 +1,1 @@
+﻿package {		public const funciton:Object = {		VERSION: 0.5,		__SONAMESPACE__: "/funciton/__aslib__/",		toString: function():String{ return "[funciton Object]"; }	};	}
