@@ -1,0 +1,1 @@
+﻿package funciton.utils {		public class PendingCall {				public var onResult:Function = function(result:Object = null):void{ };		public var onFault:Function = function(fault:Object = null):void{ };		public function PendingCall(){		}	}	}
