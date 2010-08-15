@@ -2,7 +2,9 @@ package funciton {
 	
 	import asunit.framework.TestSuite;
 	
+	import funciton.tests.ArrayCollectionTest;
 	import funciton.tests.Base64Test;
+	import funciton.tests.CollectionEventTests;
 	import funciton.tests.DateUtilsTest;
 	import funciton.tests.LogMessageTest;
 	import funciton.tests.LoggingTest;
@@ -32,6 +34,12 @@ package funciton {
 			addTest(new LoggingTest("testFlags"));
 			addTest(new LoggingTest("testHandler"));
 			addTest(new LoggingTest("testFormatter"));
+			
+			addTest(new CollectionEventTests("testProperties"));
+			
+			addTest(new ArrayCollectionTest("testInstantiation"));
+			addTest(new ArrayCollectionTest("testClassMethods"));
+			addTest(new ArrayCollectionTest("testEvents"));
 			
 		}
 		
