@@ -4,6 +4,8 @@ package funciton {
 	
 	import funciton.tests.Base64Test;
 	import funciton.tests.DateUtilsTest;
+	import funciton.tests.LogMessageTest;
+	import funciton.tests.LoggingTest;
 	import funciton.tests.NumberUtilsTest;
 	import funciton.tests.PendingCallTest;
 	
@@ -24,6 +26,12 @@ package funciton {
 			
 			addTest(new PendingCallTest("testOnResult"));
 			addTest(new PendingCallTest("testOnFault"));
+			
+			addTest(new LogMessageTest("testInstantiation"));
+			
+			addTest(new LoggingTest("testFlags"));
+			addTest(new LoggingTest("testHandler"));
+			addTest(new LoggingTest("testFormatter"));
 			
 		}
 		

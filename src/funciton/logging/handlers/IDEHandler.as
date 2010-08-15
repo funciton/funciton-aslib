@@ -1,0 +1,1 @@
+﻿package funciton.logging.handlers {		public function IDEHandler(message:String):void{		trace (message);	}	}

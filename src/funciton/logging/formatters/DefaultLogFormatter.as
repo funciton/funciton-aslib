@@ -1,0 +1,1 @@
+﻿package funciton.logging.formatters {		import funciton.logging.Logging;	import funciton.models.LogMessage;		public function DefaultLogFormatter(logMessage:LogMessage):String{		var type:String = Logging.getFlagLabel(logMessage.type);				return ["[" + type + "]", logMessage.environment, logMessage.message].join(" ");	}	}
