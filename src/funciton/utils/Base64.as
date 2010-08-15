@@ -1,7 +1,5 @@
 package funciton.utils {
 	
-	import flash.utils.ByteArray;
-	
 	public class Base64 {
 		
 		private static const BASE64_CHARS:String = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
