@@ -3,6 +3,7 @@ package funciton {
 	import asunit.framework.TestSuite;
 	
 	import funciton.tests.ArrayCollectionTest;
+	import funciton.tests.Base36Test;
 	import funciton.tests.Base64Test;
 	import funciton.tests.CollectionEventTests;
 	import funciton.tests.DateUtilsTest;
@@ -40,6 +41,8 @@ package funciton {
 			addTest(new ArrayCollectionTest("testInstantiation"));
 			addTest(new ArrayCollectionTest("testClassMethods"));
 			addTest(new ArrayCollectionTest("testEvents"));
+			
+			addTest(new Base36Test("testEncodeDecode"));
 			
 		}
 		
