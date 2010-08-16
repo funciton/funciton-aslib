@@ -11,6 +11,7 @@ package funciton {
 	import funciton.tests.LoggingTest;
 	import funciton.tests.NumberUtilsTest;
 	import funciton.tests.PendingCallTest;
+	import funciton.tests.UpstreamServerTest;
 	
 	public class AllTests extends TestSuite {
 		
@@ -43,6 +44,9 @@ package funciton {
 			addTest(new ArrayCollectionTest("testEvents"));
 			
 			addTest(new Base36Test("testEncodeDecode"));
+			
+			addTest(new UpstreamServerTest("testInstantiation"));
+			addTest(new UpstreamServerTest("testPropertyChange"));
 			
 		}
 		
