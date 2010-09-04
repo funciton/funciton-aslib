@@ -1,3 +1,9 @@
 p>. !http://funciton.com/pub/github-logo.png(funciton communications)! 
 
 h1{color:#666}. funciton communication - as3 library ^(alpha)^
+
+this project aims to open the internal ActionScript 3 framework that the digital agency funciton communications uses.
+
+this framework should not include references to external libraries (not even flex libraries).
+
+if you would like to contribute feel free to fork us.
