@@ -2,16 +2,16 @@ package funciton {
 	
 	import asunit.framework.TestSuite;
 	
-	import funciton.tests.ArrayCollectionTest;
-	import funciton.tests.Base36Test;
-	import funciton.tests.Base64Test;
-	import funciton.tests.CollectionEventTests;
-	import funciton.tests.DateUtilsTest;
-	import funciton.tests.LogMessageTest;
-	import funciton.tests.LoggingTest;
-	import funciton.tests.NumberUtilsTest;
-	import funciton.tests.PendingCallTest;
-	import funciton.tests.UpstreamServerTest;
+	import funciton.tests.collections.ArrayCollectionTest;
+	import funciton.tests.utils.Base36Test;
+	import funciton.tests.utils.Base64Test;
+	import funciton.tests.events.CollectionEventTests;
+	import funciton.tests.utils.DateUtilsTest;
+	import funciton.tests.models.LogMessageTest;
+	import funciton.tests.logging.LoggingTest;
+	import funciton.tests.utils.NumberUtilsTest;
+	import funciton.tests.utils.PendingCallTest;
+	import funciton.tests.models.UpstreamServerTest;
 	
 	public class AllTests extends TestSuite {
 		
