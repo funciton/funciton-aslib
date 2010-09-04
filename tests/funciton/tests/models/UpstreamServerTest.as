@@ -66,6 +66,9 @@ package funciton.tests.models {
 			assertEquals(10, $__instance.max_fails);
 			
 			assertEquals("ftp://0.0.0.0/myApp", $__instance.uri);
+			
+			$__instance.host = null;
+			assertEquals(null, $__instance.uri);
 		}
 		
 	}
