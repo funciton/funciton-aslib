@@ -5,7 +5,7 @@ package funciton {
 	import funciton.tests.collections.ArrayCollectionTest;
 	import funciton.tests.utils.Base36Test;
 	import funciton.tests.utils.Base64Test;
-	import funciton.tests.events.CollectionEventTests;
+	import funciton.tests.events.CollectionEventTest;
 	import funciton.tests.utils.DateUtilsTest;
 	import funciton.tests.models.LogMessageTest;
 	import funciton.tests.logging.LoggingTest;
@@ -37,7 +37,7 @@ package funciton {
 			addTest(new LoggingTest("testHandler"));
 			addTest(new LoggingTest("testFormatter"));
 			
-			addTest(new CollectionEventTests("testProperties"));
+			addTest(new CollectionEventTest("testProperties"));
 			
 			addTest(new ArrayCollectionTest("testInstantiation"));
 			addTest(new ArrayCollectionTest("testClassMethods"));

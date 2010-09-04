@@ -4,11 +4,11 @@ package funciton.tests.events {
 	
 	import funciton.events.CollectionEvent;
 	
-	public class CollectionEventTests extends TestCase {
+	public class CollectionEventTest extends TestCase {
 		
 		private var $__instance:CollectionEvent;
 		
-		public function CollectionEventTests(testMethod:String){
+		public function CollectionEventTest(testMethod:String){
 			super(testMethod);
 		}
 		
