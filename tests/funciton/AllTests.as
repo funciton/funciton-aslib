@@ -3,15 +3,16 @@ package funciton {
 	import asunit.framework.TestSuite;
 	
 	import funciton.tests.collections.ArrayCollectionTest;
+	import funciton.tests.events.CollectionEventTest;
+	import funciton.tests.logging.LoggingTest;
+	import funciton.tests.models.LogMessageTest;
+	import funciton.tests.models.UpstreamServerTest;
+	import funciton.tests.net.connectors.BaseConnectorTest;
 	import funciton.tests.utils.Base36Test;
 	import funciton.tests.utils.Base64Test;
-	import funciton.tests.events.CollectionEventTest;
 	import funciton.tests.utils.DateUtilsTest;
-	import funciton.tests.models.LogMessageTest;
-	import funciton.tests.logging.LoggingTest;
 	import funciton.tests.utils.NumberUtilsTest;
 	import funciton.tests.utils.PendingCallTest;
-	import funciton.tests.models.UpstreamServerTest;
 	
 	public class AllTests extends TestSuite {
 		
@@ -47,6 +48,9 @@ package funciton {
 			
 			addTest(new UpstreamServerTest("testInstantiation"));
 			addTest(new UpstreamServerTest("testPropertyChange"));
+			
+			addTest(new BaseConnectorTest("testConnectionRefused"));
+			addTest(new BaseConnectorTest("testConnectionSuccess"));
 			
 		}
 		

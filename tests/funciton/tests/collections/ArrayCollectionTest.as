@@ -65,11 +65,11 @@ package funciton.tests.collections {
 		
 		public function testEvents():void{
 			$__instance = new ArrayCollection();
-			$__instance.addEventListener(CollectionEvent.ADD, addAsync(null));
-			$__instance.addEventListener(CollectionEvent.UPDATE, addAsync(null));
-			$__instance.addEventListener(CollectionEvent.REPLACE, addAsync(null));
-			$__instance.addEventListener(CollectionEvent.RESET, addAsync(null));
-			$__instance.addEventListener(CollectionEvent.REMOVE, addAsync(null));
+			$__instance.addEventListener(CollectionEvent.ADD, addAsync());
+			$__instance.addEventListener(CollectionEvent.UPDATE, addAsync());
+			$__instance.addEventListener(CollectionEvent.REPLACE, addAsync());
+			$__instance.addEventListener(CollectionEvent.RESET, addAsync());
+			$__instance.addEventListener(CollectionEvent.REMOVE, addAsync());
 			$__instance.addItem("test");
 			$__instance.replace("test2", 0);
 			$__instance.removeItemAt(0);
