@@ -51,6 +51,9 @@ package funciton {
 			
 			addTest(new BaseConnectorTest("testConnectionRefused"));
 			addTest(new BaseConnectorTest("testConnectionSuccess"));
+			addTest(new BaseConnectorTest("testBackupConnection"));
+			addTest(new BaseConnectorTest("testDownProperty"));
+			addTest(new BaseConnectorTest("testNoUpstreams"));
 			
 		}
 		
