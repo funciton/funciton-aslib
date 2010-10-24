@@ -13,6 +13,7 @@ package funciton {
 	import funciton.tests.utils.DateUtilsTest;
 	import funciton.tests.utils.NumberUtilsTest;
 	import funciton.tests.utils.PendingCallTest;
+	import funciton.tests.utils.StringUtilsTest;
 	
 	public class AllTests extends TestSuite {
 		
@@ -54,6 +55,8 @@ package funciton {
 			addTest(new BaseConnectorTest("testBackupConnection"));
 			addTest(new BaseConnectorTest("testDownProperty"));
 			addTest(new BaseConnectorTest("testNoUpstreams"));
+			
+			addTest(new StringUtilsTest("testClassMethods"));
 			
 		}
 		
