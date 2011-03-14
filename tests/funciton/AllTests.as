@@ -5,6 +5,7 @@ package funciton {
 	import funciton.tests.collections.ArrayCollectionTest;
 	import funciton.tests.events.CollectionEventTest;
 	import funciton.tests.logging.LoggingTest;
+	import funciton.tests.logging.LoggerTest;
 	import funciton.tests.models.LogMessageTest;
 	import funciton.tests.models.UpstreamServerTest;
 	import funciton.tests.net.connectors.BaseConnectorTest;
@@ -38,6 +39,8 @@ package funciton {
 			addTest(new LoggingTest("testFlags"));
 			addTest(new LoggingTest("testHandler"));
 			addTest(new LoggingTest("testFormatter"));
+
+            addTest(new LoggerTest("baseTest"));
 			
 			addTest(new CollectionEventTest("testProperties"));
 			

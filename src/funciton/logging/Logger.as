@@ -4,16 +4,16 @@ package funciton.logging {
 	
 	public class Logger extends Logging {
 		
-		protected var $__instance:Logger = new Logger();
-		protected var $__loggers:Object = new Object();
+		protected static var $__instance:Logger;
+		protected static var $__loggers:Object = new Object();
 		
 		public function Logger(){
-			if($__instance) throw new IllegalOperationError("Can't instantiate. Use Logger.instance singleton");
+			throw new IllegalOperationError("Can't instantiate. Use Logger.instance singleton");
 		}
 		
-		public function get instance():Logger{ return $__instance; }
+		public static function get instance():Logging{ return Logger.getLogger("default"); }
 		
-		public function getLogger(name:String):Logging{
+		public static function getLogger(name:String):Logging{
 			if($__loggers[name] == null){
 				var _logger:Logging = new Logging();
 				_logger.environment = name;
